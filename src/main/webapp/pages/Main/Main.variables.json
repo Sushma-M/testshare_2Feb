@@ -1,0 +1,144 @@
+{
+  "CountryInfoServiceFullCountryInfoAllCountries" : {
+    "_id" : "wm-CountryInfoServiceFullCountryInfoAllCountries-wm.ServiceVariable-1486018470977",
+    "name" : "CountryInfoServiceFullCountryInfoAllCountries",
+    "owner" : "Page",
+    "category" : "wm.ServiceVariable",
+    "dataBinding" : [ ],
+    "type" : "com.testshare_2feb.services.countryinfoservice.FullCountryInfoAllCountriesResponse",
+    "service" : "CountryInfoService",
+    "operation" : "fullCountryInfoAllCountries",
+    "operationId" : "CountryInfoServiceController_fullCountryInfoAllCountries",
+    "operationType" : "get",
+    "serviceType" : "SoapService",
+    "dataSet" : [ ],
+    "isList" : false,
+    "maxResults" : 20,
+    "designMaxResults" : 10,
+    "startUpdate" : true,
+    "autoUpdate" : false,
+    "inFlightBehavior" : "executeLast",
+    "transformationRequired" : false,
+    "saveInPhonegap" : false,
+    "isDefault" : true,
+    "controller" : "CountryInfoService"
+  },
+  "FeedServ" : {
+    "_id" : "wm-FeedServ-wm.ServiceVariable-1486018905241",
+    "name" : "FeedServ",
+    "owner" : "Page",
+    "category" : "wm.ServiceVariable",
+    "dataBinding" : [ {
+      "target" : "feedURL",
+      "value" : "https://mail.google.com/mail/feed/atom",
+      "type" : "string"
+    }, {
+      "target" : "httpBasicAuthUsername",
+      "value" : "wavemaker.apps@gmail.com",
+      "type" : "string"
+    }, {
+      "target" : "httpBasicAuthPassword",
+      "value" : "pramati123",
+      "type" : "string"
+    }, {
+      "target" : "connectionTimeout",
+      "value" : "1000",
+      "type" : "integer"
+    } ],
+    "type" : "com.wavemaker.runtime.feed.model.Feed",
+    "service" : "FeedService",
+    "operation" : "getFeedWithHttpConfig",
+    "operationId" : "FeedServiceController_getFeedWithHttpConfig",
+    "operationType" : "get",
+    "serviceType" : "FeedService",
+    "dataSet" : [ ],
+    "isList" : false,
+    "maxResults" : 20,
+    "designMaxResults" : 10,
+    "startUpdate" : true,
+    "autoUpdate" : true,
+    "inFlightBehavior" : "executeLast",
+    "transformationRequired" : false,
+    "saveInPhonegap" : false,
+    "controller" : "FeedService"
+  },
+  "GoogleapisInvoke" : {
+    "_id" : "wm-GoogleapisInvoke-wm.ServiceVariable-1486017938747",
+    "name" : "GoogleapisInvoke",
+    "owner" : "Page",
+    "category" : "wm.ServiceVariable",
+    "dataBinding" : [ {
+      "target" : "sensor",
+      "value" : "false",
+      "type" : "string"
+    }, {
+      "target" : "origin",
+      "value" : "bind:Widgets.text3.datavalue",
+      "type" : "string"
+    }, {
+      "target" : "destination",
+      "value" : "bind:Widgets.text4.datavalue",
+      "type" : "string"
+    } ],
+    "type" : "googleapis.RootResponse",
+    "service" : "googleapis",
+    "operation" : "invoke",
+    "operationId" : "googleapis_RestServiceVirtualController-invoke",
+    "operationType" : "get",
+    "serviceType" : "RestService",
+    "dataSet" : [ ],
+    "isList" : false,
+    "maxResults" : 20,
+    "designMaxResults" : 10,
+    "startUpdate" : false,
+    "autoUpdate" : false,
+    "inFlightBehavior" : "executeLast",
+    "transformationRequired" : false,
+    "saveInPhonegap" : false,
+    "isDefault" : true,
+    "controller" : "RestServiceVirtual"
+  },
+  "HeartRateserv" : {
+    "_id" : "wm-HeartRateserv-wm.WebSocketVariable-1486018732548",
+    "name" : "HeartRateserv",
+    "owner" : "Page",
+    "category" : "wm.WebSocketVariable",
+    "dataBinding" : [ ],
+    "service" : "HeartRate",
+    "operationId" : "HeartRate_WebSocketServiceVirtualController-invoke",
+    "dataSet" : [ ],
+    "type" : "HeartRate.RootResponse",
+    "isDefault" : false,
+    "isList" : false,
+    "startUpdate" : true,
+    "dataUpdateStrategy" : "append",
+    "dataLimit" : 20
+  },
+  "JavaserviceVariable1" : {
+    "_id" : "wm-serviceVariable1-wm.ServiceVariable-1486017684843",
+    "name" : "JavaserviceVariable1",
+    "owner" : "Page",
+    "category" : "wm.ServiceVariable",
+    "dataBinding" : [ {
+      "target" : "name",
+      "value" : "bind:Variables.loggedInUser.dataSet.name",
+      "type" : "string"
+    } ],
+    "type" : "string",
+    "service" : "MyJavaService",
+    "operation" : "sampleJavaOperation",
+    "operationId" : "MyJavaController_sampleJavaOperation",
+    "operationType" : "get",
+    "serviceType" : "JavaService",
+    "dataSet" : [ ],
+    "isList" : false,
+    "maxResults" : 20,
+    "designMaxResults" : 10,
+    "startUpdate" : true,
+    "autoUpdate" : false,
+    "inFlightBehavior" : "executeLast",
+    "transformationRequired" : false,
+    "saveInPhonegap" : false,
+    "controller" : "MyJava"
+  }
+}
